@@ -9,6 +9,11 @@ public class createPack1Test {
 	}
 	
 	@Test
+	public void dummyTest() {
+	System.out.println("Added for github purpose");	
+	}
+	
+	@Test
 	public void modifyPrice() {
 		System.out.println("Execute modifycontact Test");
 		
