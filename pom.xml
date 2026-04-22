@@ -28,15 +28,7 @@
 			<version>7.10.0</version>
 
 		</dependency>
-		<!-- Source:
-		https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
-		<dependency>
-			<groupId>com.googlecode.json-simple</groupId>
-			<artifactId>json-simple</artifactId>
-			<version>1.1.1</version>
-
-		</dependency>
-		<!-- Source:
+			<!-- Source:
 		https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
 		<dependency>
 			<groupId>com.mysql</groupId>
@@ -62,4 +54,44 @@
 
 
 	</dependencies>
+	<profiles>
+		<profile>
+			<id>RT</id>
+				<build>
+					<plugins>
+						<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.5.3</version>
+    <configuration>
+   	 	<suiteXmlFiles>
+   	 	<suiteXmlFile>testing_RT.xml</suiteXmlFile>
+   		</suiteXmlFiles>
+    </configuration>
+    					</plugin>
+					</plugins>
+				</build>
+    	</profile>
+
+	
+	
+		<profile>
+			<id>ST</id>
+				<build>
+					<plugins>
+						<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.5.3</version>
+    <configuration>
+   	 	<suiteXmlFiles>
+   	 	<suiteXmlFile>testing_ST.xml</suiteXmlFile>
+   		</suiteXmlFiles>
+    </configuration>
+    					</plugin>
+					</plugins>
+				</build>
+    	</profile>
+    		</profiles>
+	
 </project>
