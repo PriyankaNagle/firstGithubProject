@@ -5,6 +5,15 @@ import org.testng.annotations.Test;
 public class createPack1Test {
 	@Test
 	public void createPrice() {
+		String URL=System.getProperty("url");
+		String BROWSER=System.getProperty("browser");
+		String UN=System.getProperty("username");
+		String PSWD=System.getProperty("password");
+		
+		System.out.println(URL);
+		System.out.println(BROWSER);
+		System.out.println(UN);
+		System.out.println(PSWD);
 		System.out.println("Execute Pricecontact Test");
 	}
 	
