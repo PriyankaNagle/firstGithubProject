@@ -27,6 +27,11 @@ public class createPack1Test {
 		System.out.println("Execute modifycontact Test");
 		
 	}
+	@Test
+	public void deletePrice() {
+		System.out.println("Execute deletecontact Test");
+	
+	}
 
 
 }
